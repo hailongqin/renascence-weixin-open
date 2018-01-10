@@ -44,16 +44,16 @@
 <!-- 		<dependency org="org.springframework.boot" name="spring-boot-autoconfigure" rev="${spring.boot.version}"/> -->
 <!-- 		<dependency org="org.springframework.boot" name="spring-boot-starter-parent" rev="${spring.boot.version}"/> -->
 	 
-<!-- 	 	<dependency org="org.springframework" name="spring-tx" rev="${spring.version}"/> -->
-<!-- 		<dependency org="org.springframework" name="spring-orm" rev="${spring.version}"/> -->
-<!-- 		<dependency org="org.springframework" name="spring-aop" rev="${spring.version}"/> -->
-<!-- 		<dependency org="org.springframework" name="spring-jms" rev="${spring.version}"/> -->
-<!-- 	 	<dependency org="org.springframework" name="spring-web" rev="${spring.version}"/> -->
-<!-- 		<dependency org="org.springframework" name="spring-oxm" rev="${spring.version}"/> -->
-<!-- 		<dependency org="org.springframework" name="spring-core" rev="${spring.version}"/> -->
-<!-- 		<dependency org="org.springframework" name="spring-jdbc" rev="${spring.version}"/> -->
+	 	<dependency org="org.springframework" name="spring-tx" rev="${spring.version}"/>
+		<dependency org="org.springframework" name="spring-orm" rev="${spring.version}"/>
+		<dependency org="org.springframework" name="spring-aop" rev="${spring.version}"/>
+		<dependency org="org.springframework" name="spring-jms" rev="${spring.version}"/>
+	 	<dependency org="org.springframework" name="spring-web" rev="${spring.version}"/>
+		<dependency org="org.springframework" name="spring-oxm" rev="${spring.version}"/>
+		<dependency org="org.springframework" name="spring-core" rev="${spring.version}"/>
+		<dependency org="org.springframework" name="spring-jdbc" rev="${spring.version}"/>
 <!-- 		<dependency org="org.springframework" name="spring-test" rev="${spring.version}"/> -->
-<!-- 		<dependency org="org.springframework" name="spring-beans" rev="${spring.version}"/> -->
+		<dependency org="org.springframework" name="spring-beans" rev="${spring.version}"/>
 <!-- 		<dependency org="org.springframework" name="spring-webmvc" rev="${spring.version}"/> -->
 <!-- 		<dependency org="org.springframework" name="spring-aspects" rev="${spring.version}"/>  -->
 <!-- 		<dependency org="org.springframework" name="spring-context" rev="${spring.version}"/> -->
