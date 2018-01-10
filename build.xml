@@ -1,0 +1,69 @@
+<project xmlns:ivy="antlib:org.apache.ivy.ant" default="jar">
+	<property name="module.home" value="." />
+	<property name="module.lib" value="${module.home}/lib" />
+	<property name="build.dir" value="target"/>
+	<property name="src.dir" value="src/main/java"/>
+
+	<target name="init">
+		<ivy:settings file="ivysettings.xml" />
+		<ivy:retrieve/>
+	</target>
+
+	<target name="compile" depends="init">
+		<echo message="compiling..."/>
+		<mkdir dir="${build.dir}/classes"/>
+		<echo>java version: ${ant.java.version}</echo>
+		<echo>java detail version: ${java.version}</echo>
+		<javac srcdir="${src.dir}" destdir="${build.dir}/classes" includeantruntime="on">
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar destfile="${build.dir}/${ivy.module}.jar" basedir="${build.dir}/classes"/>
+	</target>
+
+	<target name="deploy" depends="jar">
+		<ivy:deliver deliverpattern="${build.dir}/ivy.xml" pubrevision="${ivy.revision}" status="release"/>
+		<ivy:makepom ivyfile="${build.dir}/ivy.xml" pomfile="${build.dir}/${ivy.module}.pom"/>
+		<ivy:resolve/>
+		<ivy:publish resolver="nexus-releases"
+		             pubrevision="${ivy.revision}"
+		             status="${publish.status}"
+		             overwrite="true" 
+		             publishivy="false" >
+		  <artifacts pattern="${build.dir}/[artifact].[ext]" />
+		</ivy:publish>
+	</target>
+	
+	<target name="deploy-snapshots" depends="jar">
+		<ivy:deliver deliverpattern="${build.dir}/ivy.xml" pubrevision="${ivy.revision}" status="snapshot"/>
+		<ivy:makepom ivyfile="${build.dir}/ivy.xml" pomfile="${build.dir}/${ivy.module}.pom"/>
+		<ivy:resolve/>
+		<ivy:publish resolver="nexus-snapshots"
+		             pubrevision="${ivy.revision}"
+		             status="${publish.status}"
+		             overwrite="true" 
+		             publishivy="false" >
+		  <artifacts pattern="${build.dir}/[artifact].[ext]" />
+		</ivy:publish>
+	</target>
+
+	<target name="clean" description="--> clean the project">
+		<delete includeemptydirs="true" quiet="true">
+			<fileset dir="${build.dir}"/>
+			<fileset dir="lib"/>
+		</delete>
+	</target>
+
+	<target name="clean-cache" description="--> clean the ivy cache">
+		<ivy:cleancache/>
+	</target>
+  
+  	<path id="compile.classpath">
+		<fileset dir="${module.lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+</project>

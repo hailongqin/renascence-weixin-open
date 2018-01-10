@@ -1,0 +1,17 @@
+<ivysettings>
+	<settings defaultResolver="nexus"/>
+	<property name="repo.host" value="47.93.45.158" />
+	<property name="repo.port" value="8091" />
+	<property name="repo.urlbase" value="http://${repo.host}:${repo.port}" />
+	<properties file="libraries.properties" />
+	<caches defaultCacheDir="F:/DATA/.ivy2/cache" />
+	<credentials host="${repo.host}" realm="Sonatype Nexus Repository Manager" username="admin" passwd="admin123"/>
+	<property name="nexus-public" value="${repo.urlbase}/repository/maven-public"/>
+	<property name="nexus-releases" value="${repo.urlbase}/repository/maven-releases"/>
+	<property name="nexus-snapshots" value="${repo.urlbase}/repository/maven-snapshots"/>
+	<resolvers>
+		<ibiblio name="nexus" m2compatible="true" root="${nexus-public}"/>
+		<ibiblio name="nexus-snapshots" m2compatible="true" root="${nexus-snapshots}"/>
+		<ibiblio name="nexus-releases" m2compatible="true" root="${nexus-releases}"/>
+	</resolvers>
+</ivysettings>
