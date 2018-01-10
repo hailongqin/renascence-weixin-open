@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ren.ascence.mapper.OpenComponentAccessTokenMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="ren.ascence.entity.OpenComponentAccessToken">
+		<id column="id" property="id" />
+		<result column="expires_in" property="expiresIn" />
+		<result column="create_time" property="createTime" />
+		<result column="component_access_token" property="componentAccessToken" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, expires_in AS expiresIn, create_time AS createTime, component_access_token AS componentAccessToken
+    </sql>
+
+</mapper>

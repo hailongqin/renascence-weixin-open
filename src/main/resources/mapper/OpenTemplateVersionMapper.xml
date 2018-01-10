@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ren.ascence.mapper.OpenTemplateVersionMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="ren.ascence.entity.OpenTemplateVersion">
+		<id column="id" property="id" />
+		<result column="user_version" property="userVersion" />
+		<result column="user_desc" property="userDesc" />
+		<result column="template_id" property="templateId" />
+		<result column="create_time" property="createTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_version AS userVersion, user_desc AS userDesc, template_id AS templateId, create_time AS createTime
+    </sql>
+
+</mapper>
