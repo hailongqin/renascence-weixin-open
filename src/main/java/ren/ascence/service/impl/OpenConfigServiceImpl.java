@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author zhongbh
- * @since 2018-01-10
+ * @since 2018-01-13
  */
 @Service
 public class OpenConfigServiceImpl extends ServiceImpl<OpenConfigMapper, OpenConfig> implements IOpenConfigService {

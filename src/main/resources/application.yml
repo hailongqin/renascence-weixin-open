@@ -10,7 +10,7 @@ spring:
 
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url : jdbc:mysql://localhost:3306/test?jdbcCompliantTruncation=false&characterEncoding=UTF-8&allowMultiQueries=true
+    url : jdbc:mysql://localhost:3306/test?useSSL=false&jdbcCompliantTruncation=false&characterEncoding=UTF-8&allowMultiQueries=true
     username : root
     password : 321
     driver-class-name : com.mysql.jdbc.Driver

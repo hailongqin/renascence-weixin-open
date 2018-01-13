@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.service.IService;
  * </p>
  *
  * @author zhongbh
- * @since 2018-01-10
+ * @since 2018-01-13
  */
 public interface IOpenConfigService extends IService<OpenConfig> {
 	

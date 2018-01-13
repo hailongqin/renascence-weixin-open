@@ -100,9 +100,9 @@ public class MysqlGenerator {
                             }
                         })
                         .setDriverName("com.mysql.jdbc.Driver")
-                        .setUsername("")
-                        .setPassword("")
-                        .setUrl("")
+                        .setUsername("os")
+                        .setPassword("Asdf(&123456")
+                        .setUrl("jdbc:mysql://rm-bp1p607af7t60w45m2o.mysql.rds.aliyuncs.com/qunju_test?jdbcCompliantTruncation=false&characterEncoding=UTF-8&allowMultiQueries=true")
         ).setStrategy(
                 // 策略配置
                 new StrategyConfig()
@@ -110,7 +110,7 @@ public class MysqlGenerator {
                         // .setDbColumnUnderline(true)//全局下划线命名
                         //.setTablePrefix(new String[]{"bmd_", "mp_"})// 此处可以修改为您的表前缀
                         .setNaming(NamingStrategy.underline_to_camel)// 表名生成策略
-                         .setInclude(new String[] { "city" }) // 需要生成的表
+                         .setInclude(new String[] { "open_config" }) // 需要生成的表
                         // .setExclude(new String[]{"test"}) // 排除生成的表
                         // 自定义实体父类
                         // .setSuperEntityClass("com.baomidou.demo.TestEntity")

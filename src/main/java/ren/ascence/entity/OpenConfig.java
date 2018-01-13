@@ -14,7 +14,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author zhongbh
- * @since 2018-01-10
+ * @since 2018-01-13
  */
 @TableName("open_config")
 public class OpenConfig extends Model<OpenConfig> {

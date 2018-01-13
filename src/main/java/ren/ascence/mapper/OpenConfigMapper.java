@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * </p>
  *
  * @author zhongbh
- * @since 2018-01-10
+ * @since 2018-01-13
  */
 public interface OpenConfigMapper extends BaseMapper<OpenConfig> {
 
