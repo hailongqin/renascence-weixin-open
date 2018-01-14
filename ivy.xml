@@ -33,6 +33,7 @@
 		<dependency org="com.baomidou" name="mybatisplus-spring-boot-starter" rev="1.0.4"/>
 		<dependency org="com.baomidou" name="mybatis-plus" rev="2.1.0"/>
 		<dependency org="com.alibaba" name="fastjson" rev="1.2.38"/>
+		<dependency org="org.projectlombok" name="lombok" rev="1.16.18"/>
 		
 		<dependency org="junit" name="junit" rev="4.12" conf="test->default"/>
 	 
