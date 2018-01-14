@@ -30,33 +30,21 @@
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.43"/>
 		<dependency org="org.apache.velocity" name="velocity" rev="1.7"/>
   		<dependency org="com.zaxxer" name="HikariCP" rev="2.7.0"/>
-		<dependency org="org.springframework.boot" name="spring-boot-starter-jdbc" rev="${spring.boot.version}">
-			<exclude org="org.apache.tomcat" module="tomcat-jdbc"/>
-		</dependency>
 		<dependency org="com.baomidou" name="mybatisplus-spring-boot-starter" rev="1.0.4"/>
 		<dependency org="com.baomidou" name="mybatis-plus" rev="2.1.0"/>
-		<dependency org="org.springframework.boot" name="spring-boot-starter-test" rev="${spring.boot.version}"/>
 		<dependency org="com.alibaba" name="fastjson" rev="1.2.38"/>
 		
 		<dependency org="junit" name="junit" rev="4.12" conf="test->default"/>
 	 
 	 	<dependency org="org.springframework" name="spring-tx" rev="${spring.version}"/>
-		<dependency org="org.springframework" name="spring-orm" rev="${spring.version}"/>
 		<dependency org="org.springframework" name="spring-aop" rev="${spring.version}"/>
-		<dependency org="org.springframework" name="spring-jms" rev="${spring.version}"/>
 	 	<dependency org="org.springframework" name="spring-web" rev="${spring.version}"/>
-		<dependency org="org.springframework" name="spring-oxm" rev="${spring.version}"/>
 		<dependency org="org.springframework" name="spring-core" rev="${spring.version}"/>
 		<dependency org="org.springframework" name="spring-jdbc" rev="${spring.version}"/>
-		<dependency org="org.springframework" name="spring-test" rev="${spring.version}"/>
 		<dependency org="org.springframework" name="spring-beans" rev="${spring.version}"/>
-		<dependency org="org.springframework" name="spring-webmvc" rev="${spring.version}"/>
-		<dependency org="org.springframework" name="spring-aspects" rev="${spring.version}"/> 
 		<dependency org="org.springframework" name="spring-context" rev="${spring.version}"/>
-		<dependency org="org.springframework" name="spring-websocket" rev="${spring.version}"/>
-		<dependency org="org.springframework" name="spring-messaging" rev="${spring.version}"/>
+		<dependency org="org.springframework" name="spring-jcl" rev="${spring.version}"/>
 		<dependency org="org.springframework" name="spring-expression" rev="${spring.version}"/>
-		<dependency org="org.springframework" name="spring-context-support" rev="${spring.version}"/>
 		
 	</dependencies>
 

@@ -100,9 +100,9 @@ public class MysqlGenerator {
                             }
                         })
                         .setDriverName("com.mysql.jdbc.Driver")
-                        .setUsername("os")
-                        .setPassword("Asdf(&123456")
-                        .setUrl("jdbc:mysql://rm-bp1p607af7t60w45m2o.mysql.rds.aliyuncs.com/qunju_test?jdbcCompliantTruncation=false&characterEncoding=UTF-8&allowMultiQueries=true")
+                        .setUsername("root")
+                        .setPassword("321")
+                        .setUrl("jdbc:mysql://localhost:3306/test?useSSL=false&jdbcCompliantTruncation=false&characterEncoding=UTF-8&allowMultiQueries=true")
         ).setStrategy(
                 // 策略配置
                 new StrategyConfig()
