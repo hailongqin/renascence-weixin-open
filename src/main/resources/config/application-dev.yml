@@ -17,7 +17,7 @@ spring:
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
-  typeAliasesPackage: ren.ascence.schedule.entity
+  typeAliasesPackage: ren.ascence.entity
   global-config:
     id-type: 2
     field-strategy: 2
