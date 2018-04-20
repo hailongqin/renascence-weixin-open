@@ -4,6 +4,7 @@
 <!--     <ivy:settings file="ivysettings.xml" /> -->
     
     <target name="resolve">
+    	<property name="ivy.default.ivy.user.dir" value="${ivy.cache.dir}"/>
         <ivy:retrieve conf="compile" pattern="${lib.dir}/[artifact].[ext]" sync="yes"/>
     </target>
 
